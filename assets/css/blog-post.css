@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+article>* {
+  min-width: 0;
+}
+
+
+article>.aside {
+  margin: 30px 20px;
+  color: #666;
+}
+
+img {
+  width: 100%;
+}
+
+.post-author-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.post-author-image {
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-author-meta {
+  margin-bottom: 0;
+}
+
+.u-margin-top--small {
+  margin-top: 1em;
+}
+
+.u-margin-bottom--large {
+  margin-bottom: 2em;
+}

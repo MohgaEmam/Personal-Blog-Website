@@ -1,0 +1,193 @@
+/* CSS files add styling rules to your content */
+
+.mainheader {
+  grid-area: header;
+  padding: 1em;
+}
+
+.left {
+  grid-area: sidebar;
+}
+
+.maincontent {
+  grid-area: main;
+}
+
+.mainfooter {
+  grid-area: footer;
+  background-color: #666;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.panels {
+  list-style: none;
+  margin: 1em 0 1em 0;
+  padding: 0;
+}
+
+.panels li {
+  background-color: #efefef;
+  border-radius: 5px;
+  padding: 10px;
+  box-size: border-box;
+}
+
+@media (min-width: 550px) {
+  .container {
+    display: grid;
+    grid-template-columns: 22% 4% 74%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header""sidebar . main""footer footer footer";
+  }
+
+  .panels {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .panels li {
+    width: 27%;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.wrapper>* {
+  /* border: 2px solid #f08c00;
+  background-color: #ffec99; */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-head {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.main-nav {
+  grid-area: nav;
+}
+
+.side {
+  grid-area: sidebar;
+}
+
+.ad {
+  grid-area: ad
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "sidebar"
+    "ad"
+    "footer";
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "header header  header"
+      "nav    content sidebar"
+      "nav    content ad"
+      "footer footer  footer";
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+.avatar {
+  width: 100px;
+}
+
+.color {
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 100px;
+  margin: 10px;
+}
+
+.primary-color {
+  background-color: #9b4dca;
+}
+
+.secondary-color {
+  background-color: #606c76;
+}
+
+.text-color {
+  background-color: #d1d1d1;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 10px 740px 10px 1fr 1fr;
+}
+
+article>* {
+  grid-column: 4;
+}
+
+article>figure {
+  grid-column: 1 / -1;
+  margin: 20px 0;
+}
+
+article>.aside {
+  grid-column: 5 / -1;
+}
+
+article>blockquote {
+  grid-column: 3 / span 2;
+  margin: 0px 0;
+  color: #666;
+  border-left: 3px solid black;
+  padding-left: 10px;
+}
+
+/* General styling */
